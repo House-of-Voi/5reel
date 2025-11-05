@@ -1098,7 +1098,7 @@ class SpinManager(SpinManagerInterface, BankManager, Ownable):
             r (uint): The round number of the spin.
         """
         # payment assertions
-        expected_payment_amount = bet_amount * (max_payline_index + UInt64(1))
+        expected_payment_amount = bet_amount * (max_payline_index + UInt64(2))
         assert (
             expected_payment_amount >= self._get_min_bet_amount()
         ), "bet amount too small"
